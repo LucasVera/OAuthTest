@@ -86,6 +86,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\main.css" />
+    <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-resource.min.js.map" />
