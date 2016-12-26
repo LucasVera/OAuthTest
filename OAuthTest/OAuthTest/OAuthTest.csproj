@@ -86,12 +86,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\app.js" />
+    <Content Include="App\loginController.js" />
+    <Content Include="App\loginService.js" />
+    <Content Include="App\views\404.html" />
+    <Content Include="App\views\login.html" />
     <Content Include="Content\main.css" />
     <Content Include="index.html" />
+    <Content Include="oauth_callback.html" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-resource.min.js.map" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Scripts\angular-route.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

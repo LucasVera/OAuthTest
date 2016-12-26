@@ -1,0 +1,36 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <form class="form form-horizontal" id="loginForm" name="loginForm" ng-submit="login()">
+                <div class="form-group">
+                    <label for="txtUser">Usuario</label>
+                    <input type="text" class="form-control" placeholder="Usuario" ng-model="user" name="txtUser" />
+                </div>
+
+                <div class="form-group">
+                    <label for="txtPass">Contraseña</label>
+                    <input type="password" class="form-control" placeholder="Contraseña" ng-model="password" name="txtPass" />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+                <button type="reset" class="btn btn-default">Limpiar</button>
+
+                <div style="padding:35px;"></div>
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h5>Ingresar con otros medios</h5>
+                    </div>
+                    <div class="panel-body">
+                        <button ng-click="oauthLogin('imgur')" class="btn btn-primary">Imgur<span class="glyphicon glyphicon-new-window"></span></button>
+                    </div>
+                </div>
+                <div class="alert" ng-class="loginMsgClass" ng-if="showLoginMsg">
+                    {{loginMsg}}
+                    <button type="button" class="close" ng-click="showLoginMsg = false;"><span aria-hidden="true">&times;</span></button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

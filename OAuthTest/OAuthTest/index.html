@@ -1,8 +1,10 @@
 ﻿<!doctype html>
-<html>
+<html ng-app="OAuthApp">
 
 <head>
 
+    <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
     <link rel="stylesheet" href="Content/bootstrap.min.css" />
     <link rel="stylesheet" href="Content/main.css" />
 
@@ -15,6 +17,7 @@
         <h3>HEADER</h3>
     </header>
 
+
     <div ng-view="/"></div>
 
     <footer>
@@ -22,9 +25,31 @@
     </footer>
 
 
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-auth.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDctiLFX_U2Bf0FYaQ8V5hT1w-JBgJSge4",
+        authDomain: "logintest-86af3.firebaseapp.com",
+        databaseURL: "https://logintest-86af3.firebaseio.com",
+        storageBucket: "logintest-86af3.appspot.com",
+        messagingSenderId: "993090670661"
+      };
+      firebase.initializeApp(config);
+    </script>
+
     <script src="Scripts/jquery-1.9.1.min.js"></script>
     <script src="Scripts/angular.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
+
+    <script src="Scripts/angular-resource.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+
+    <script src="App/app.js"></script>
+    <script src="App/loginController.js"></script>
+    <script src="App/loginService.js"></script>
 
 </body>
 
